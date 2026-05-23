@@ -1,0 +1,48 @@
+:root {
+  --primary: #1f4e79;
+  --primary-2: #2e75b6;
+  --accent: #ffd54f;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1f2937;
+  margin: 0;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-2) 100%);
+  color: #fff;
+  padding: clamp(48px, 9vw, 96px) 0 clamp(48px, 8vw, 80px);
+  position: relative;
+  overflow: hidden;
+}
+
+.badge-soft {
+  background: #fff7d6;
+  color: #8a6d00;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: .5px;
+}
+
+.feature-icon {
+  width: 56px; height: 56px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  background: #f0f6fb; color: var(--primary); font-size: 28px; margin-bottom: 16px;
+}
+
+.feature-card {
+  border: 1px solid #eef0f3; border-radius: 18px;
+  padding: clamp(20px, 3vw, 28px); height: 100%;
+  transition: .2s; background: #fff;
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(31,78,121,.08);
+  border-color: #cfe0ee;
+}
